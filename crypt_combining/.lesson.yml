@@ -1,0 +1,7 @@
+---
+title: "Crypt Combining"
+type: "exercise"
+description: "Introduction to combining arrays in ruby"
+tags: "arrays"
+ignore:
+- "crypt_combining.md"

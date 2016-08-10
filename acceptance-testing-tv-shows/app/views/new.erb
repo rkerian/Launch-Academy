@@ -1,0 +1,26 @@
+<h1>Add Show Details</h1>
+
+<br>
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+  <br><br>
+<% end %>
+
+<form action="/television_shows/new" method="post">
+  Title:<br>
+  <input type="text" id="Title" name="title"><br>
+  Network:<br>
+  <input type="text" id="Network" name="network"><br>
+  Starting Year:<br>
+  <input type="text" id="Starting Year" name="starting_year"><br>
+  Synopsis:<br>
+  <input type="text" id="Synopsis" name="synopsis"><br>
+  Genre:<br>
+  <select name="genre" id="Genre">
+    <option value="Comedy">Comedy</option>
+    <option value="Drama">Drama</option>
+    <option value="Mystery">Mystery</option>
+    <option value="Fantasy">Fantasy</option>
+  </select>
+  <input type="submit" value="Add TV Show">
+</form>

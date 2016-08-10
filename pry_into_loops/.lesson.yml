@@ -1,0 +1,7 @@
+---
+title: "Pry into your Loops"
+type: "exercise"
+description: "using pry to look at whats happening in a loop"
+tags: "loops, pry"
+ignore:
+- "pry_into_loops.md"

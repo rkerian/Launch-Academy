@@ -1,0 +1,7 @@
+---
+title: "Ruby Koans"
+type: "challenge"
+description: "Master your ruby fundamentals with this interactive tutorial"
+tags: "ruby"
+ignore:
+- "ruby-koans.md"

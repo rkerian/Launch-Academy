@@ -1,0 +1,7 @@
+---
+title: "Crypt Filling"
+type: "exercise"
+description: "Introduction to filling arrays in ruby"
+tags: "arrays"
+ignore:
+- "crypt_filling.md"

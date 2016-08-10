@@ -1,0 +1,6 @@
+require_relative 'address'
+require_relative 'apartment'
+require_relative 'dwelling'
+require_relative 'house'
+require_relative 'occupant'
+require 'pry'

@@ -1,0 +1,56 @@
+.tree-wrapper {
+  color: #008000;
+  margin: 20px 20px;
+  height: 50px;
+}
+
+.branch {
+  border-radius: 30px;
+  background-color: #008000;
+  height: 50px;
+  margin-top: 2em;
+}
+
+.branch-0 {
+  width: 50px;
+  margin-left: 10em;
+}
+
+.branch-1 {
+  width: 100px;
+  margin-left: 8.5em;
+}
+
+.branch-2 {
+  width: 150px;
+  margin-left: 7em;
+}
+
+.branch-3 {
+  width: 200px;
+  margin-left: 5.5em;
+}
+
+.branch-4 {
+  width: 250px;
+  margin-left: 4em;
+}
+
+.branch-5 {
+  width: 300px;
+  margin-left: 2.5em;
+}
+
+.branch-6 {
+  width: 350px;
+  margin-left: 1em;
+}
+
+.trunk {
+  background-color: #A52A2A;
+  width: 50px;
+  height: 150px;
+  border-radius: 30px;
+  margin-top: 2em;
+  margin-left: 10em;
+}

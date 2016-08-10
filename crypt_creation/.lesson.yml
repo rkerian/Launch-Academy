@@ -1,0 +1,7 @@
+---
+title: "Crypt Creation"
+type: "exercise"
+description: "creating arrays in ruby"
+tags: "arrays"
+ignore:
+- "crypt_creation.md"

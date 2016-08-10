@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MMORPS</title>
+  </head>
+
+  <body class="clearfix">
+    <header>
+      <h1>MMORPS</h1>
+    </header>
+
+    <% if flash[:notice] %>
+      <%= flash[:notice] %>
+      <br><br>
+    <% end %>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Computer: <%= session[:ai_score].to_i %></td>
+        </tr>
+        <tr>
+          <td>Human: <%= session[:player_score].to_i %></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form action="/choose" method="post">
+      <h2>Choose!</h2>
+      <input type="submit" name="choice" value="Rock">
+      <input type="submit" name="choice" value="Paper">
+      <input type="submit" name="choice" value="Scissors">
+    </form>
+
+
+
+  </body>
+</html>

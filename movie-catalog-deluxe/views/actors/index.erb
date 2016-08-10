@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Actors</title>
+  </head>
+
+  <body>
+    <h2>Actors</h2>
+    <% @actors.each do |actor| %>
+      <a href="/actors/<%= actor["id"] %>"><%= actor["name"] %></a>
+      <br>
+    <% end %>
+  </body>
+</html>

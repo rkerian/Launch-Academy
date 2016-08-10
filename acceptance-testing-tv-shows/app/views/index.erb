@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List of Shows</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>List of Shows</h1>
+    </header>
+
+    <% if flash[:notice] %>
+      <%= flash[:notice] %>
+      <br><br>
+    <% end %>
+
+    <% CSV.foreach("television-shows.csv", headers:true) do |row| %>
+      <%= "#{row[0]} (#{row[1]})" %>
+    <% end %>
+
+  </body>
+</html>

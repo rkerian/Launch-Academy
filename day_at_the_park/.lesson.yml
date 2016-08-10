@@ -1,0 +1,7 @@
+---
+title: "Day at the Park"
+type: "exercise"
+description: "Describe your awesome day using Ruby variables"
+tags: "variables"
+ignore:
+- "day_at_the_park.md"

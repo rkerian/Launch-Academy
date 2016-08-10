@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Submit A New Article</title>
+    <link rel="stylesheet" href="/stylesheets/app.css">
+  </head>
+
+  <body>
+    <h1>Submit A New Article</h1>
+
+    <form action="/articles" method="post">
+    <label for="article_title">New Article Title:</label>
+    <input type="text" id="article_title" name="article_title" required>
+
+    <label for="article_body">Article Body:</label>
+    <input type="text" minlength=20 id="article_body" name="article_body" required>
+
+    <lable for="article_url">Article URL:</label>
+    <input type="url" pattern="https?://.+" id="article_url" name="article_url" required>
+
+  <input type="submit">
+</form>
+
+
+  </body>
+</html>

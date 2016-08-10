@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>News Aggregator</title>
+  </head>
+
+  <body>
+    <% @stored_articles.each do |article| %>
+      ------------------------------
+      <h2><%= article["title"] %></h2>
+      <%= article["description"] %>
+      <h5><a href="<%= article["url"] %>"><%= article["url"] %></a></h5>
+      ------------------------------
+    <% end %>
+  </body>
+</html>

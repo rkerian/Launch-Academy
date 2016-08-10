@@ -1,0 +1,3 @@
+I used curl to POST to /ingredients with data that included 'ingredient=' as follows:
+
+ curl --request POST 'http://localhost:4567/ingredients' --data-ascii 'ingredient=3%20tablespoons%20good%20olive%20oil'

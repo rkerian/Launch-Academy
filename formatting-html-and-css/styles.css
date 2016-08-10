@@ -1,0 +1,42 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #F6F6EF;
+}
+
+header {
+  background-color: #FD6620;
+  color: black;
+  width: auto;
+  height: auto;
+  padding: 2px 2px;
+}
+
+header h1 {
+  color: white;
+  width: 200px;
+  display: inline-block;
+  padding: 0px;
+  margin: 2px;
+}
+
+header h2 {
+  color: black;
+  text-align: right;
+  width: 800px;
+  display: inline-block;
+  padding: 0px;
+  margin: 2px;
+}
+
+.ingredients {
+  margin: 2px;
+}
+
+li {
+  padding: 2px;
+}
+
+img {
+  margin: 2px;
+  width: 300px;
+}

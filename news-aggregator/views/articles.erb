@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Articles</title>
+    <link rel="stylesheet" href="/stylesheets/app.css">
+  </head>
+
+  <body>
+    <h1>Ryan's Spiffy Article Aggregator -- Articles</h1>
+    <% @stored_articles.each do |article| %>
+      ------------------------------
+      <h2><%= article[0] %><br></h2>
+      <%= article[1] %><br>
+      <h5><a href="<%= article[2] %>"><%= article[2] %></a><br><br></h5>
+      ------------------------------
+    <% end %>
+  </body>
+</html>

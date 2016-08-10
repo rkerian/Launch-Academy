@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Movie Database</title>
+  </head>
+
+  <body>
+
+    <h2>Movie: <%= @movie_name %> Year: <%= @movie_year %> Rating: <%= @movie_rating %>
+    Genre: <%= @movie_genre %> Studio: <%= @movie_studio %> </h2>
+    <br><br>
+    <% @characters.each do |character| %>
+      <% if character[0].nil? %>
+        <%= "Also starring #{character[1]} " %>
+        <br>
+      <% else %>
+        <%= character[0] %> played by <a href="/actors/<%= character[2] %>"><%= character[1] %>
+      <br>
+      <% end %>
+    <% end %>
+
+  </body>
+</html>

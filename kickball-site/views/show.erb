@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= @team_name %></title>
+    <link rel="stylesheet" href="/stylesheets/app.css">
+  </head>
+
+  <body>
+    <h1>Welcome to The <%= @team_name %> Team Page</h1>
+
+    <ul>
+      <% @team_data.map do |position| %>
+        <li><%= "Position: #{position[0]}, Player: #{position[1]}" %></li>
+      <% end %>
+    </ul>
+
+  </body>
+</html>

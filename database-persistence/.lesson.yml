@@ -1,0 +1,5 @@
+---
+title: "Database Persistence"
+type: "article"
+description: "Describes the basics of inserting into and retrieving from a PostgreSQL database using Ruby."
+tags: "databases, relational-databases, sql, sql-insert"
