@@ -49,14 +49,28 @@ exports.arraysAnswers = {
   },
 
   duplicates : function(arr) {
+    var sorted_arr = arr.slice().sort();
 
+    var results = [];
+    for (var i = 0; i < arr.length - 1; i++) {
+      if (sorted_arr[i + 1] == sorted_arr[i]) {
+        results.push(sorted_arr[i]);
+      }
+    }
+    return Array.from(new Set(results));
   },
 
   square : function(arr) {
-
+    return arr.map(function (x) {
+      return Math.pow(x, 2);
+    });
   },
 
   findAllOccurrences : function(arr, target) {
-
+    var indexes = [], i;
+    for(i=0; i < arr.length; i++)
+      if (arr[i] === target)
+          indexes.push(i);
+      return indexes;
   }
 };
