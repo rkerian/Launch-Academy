@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: recipe-list-brussels-sprouts_development
+
+test:
+  <<: *default
+  database: recipe-list-brussels-sprouts_test
+
+production:
+  <<: *default
+  database: recipe-list-brussels-sprouts_production
+  username: recipe-list
+  password: <%= ENV['RECIPE-LIST_DATABASE_PASSWORD'] %>
