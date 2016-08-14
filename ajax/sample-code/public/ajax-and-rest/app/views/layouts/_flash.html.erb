@@ -1,0 +1,11 @@
+<% flash.each do |type, message| %>
+  <div class="callout <%= type %>">
+    <button class="close-button" aria-label="Close alert" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <p><%= message %></p>
+  </div>
+<% end %>
+
+
+

@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: fortune_teller_development
+
+test:
+  <<: *default
+  database: fortune_teller_test
+
+production:
+  <<: *default
+  database: ajax-and-rest_production
+  username: ajax-and-rest
+  password: <%= ENV['AJAX-AND-REST_DATABASE_PASSWORD'] %>
