@@ -204,8 +204,10 @@ end
 
 # * What are the names of all the children of everyone in `people`?
 people.each do |key, value|
-  value["children"].each do |child|
-    puts child
+  if value["children"]
+    value["children"].each do |child|
+      puts child
+    end
   end
 end
 
