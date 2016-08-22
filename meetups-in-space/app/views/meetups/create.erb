@@ -1,0 +1,9 @@
+<div style = "margin-top: 50px;">
+  <form style = "color: black;" action='/meetups/create' method='POST'>
+    <input type='Text' name='name' size='' placeholder='Name' >
+    <input type='Text' name='description' size='' placeholder='Description' >
+    <input type='Text' name='location' size='' placeholder='Location' >
+    <input type='Text' name='creator' value='<%= @current_user %>'
+    <button type='submit'>Create Meetup</button>
+  </form>
+</div>
