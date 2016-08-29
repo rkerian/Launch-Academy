@@ -1,0 +1,8 @@
+<% @airplanes.each do |airplane| %>
+      <tr>
+        <td><%= airplane.name %></td>
+        <td><%= link_to 'Show', airplane %></td>
+        <td><%= link_to 'Edit', edit_airplane_path(airplane) %></td>
+        <td><%= link_to 'Destroy', airplane, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
